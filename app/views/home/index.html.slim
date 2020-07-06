@@ -1,2 +1,190 @@
-h1 Home#index
-p Find me in app/views/home/index.html.slim
+= stylesheet_link_tag 'home'
+body#page-top
+  nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top
+    .container
+      a.navbar-brand.js-scroll-trigger[href="#page-top"]
+        i.fas.fa-tractor
+        | - Criadero San Martín
+      button.navbar-toggler.navbar-toggler-right[type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"]
+        |  Menu
+        i.fas.fa-bars
+      #navbarResponsive.collapse.navbar-collapse
+        ul.navbar-nav.ml-auto
+          li.nav-item
+            a.nav-link.js-scroll-trigger[href="#about"]
+              | A cerca de nosotros
+          li.nav-item
+            a.nav-link.js-scroll-trigger[href="#projects"]
+              | Proyectos
+          li.nav-item
+            a.nav-link.js-scroll-trigger[href="#signup"]
+              | Contacto
+  header.masthead
+    .container.d-flex.h-100.align-items-center
+      .mx-auto.text-center
+        h1.mx-auto.my-0.text-uppercase
+          | Ganado, Granos y miel
+        a.btn.btn-primary.js-scroll-trigger[href="#about"]
+          | Empecemos
+  section#about.about-section.text-center
+    .container
+      .row
+        .col-lg-8.mx-auto
+          h2.text-white.mb-4
+            | El criadero San Martín
+          p.text-white-50
+            |  Finca, hubicada en la vereda San Marcos cerca a San Fransisco de Sales. Somos ganaderos, agricultores y apicultores conscientes del inmenso valor de la naturaleza, dedicados a la produccion y manejo vacuno, granos, uchuvas y miel, por ello hacemos nuestra labor con mucho amor
+      img.img-fluid[src="assets/img/ipad.png" alt=""]
+  section#projects.projects-section.bg-light
+    .container
+      .row.align-items-center.no-gutters.mb-4.mb-lg-5
+        .col-xl-8.col-lg-7
+          img.img-fluid.mb-3.mb-lg-0[src="/assets/anwar.jpg" alt=""]
+        .col-xl-4.col-lg-5
+          .featured-text.text-center.text-lg-left
+            h4
+              | Anwar Josseph Infante Leon
+            p.text-black-50.mb-0
+              | Medico veterinario, zootecnista, empresario y agropecuario.
+            .br
+            p.text-black-50.mb-0
+              | - Director de COMITE DE GANADEROS SAN FRANCISCO DE SALES
+            .br
+            p.text-black-50.mb-0
+              | - Medicina veterinária y director de Alcaldía Municipal De Nocaima
+      .row.justify-content-center.no-gutters.mb-5.mb-lg-0
+        .col-lg-6
+          img.img-fluid[src="/assets/vacas.jpg" alt=""]
+        .col-lg-6
+          .bg-black.text-center.h-100.project
+            .d-flex.h-100
+              .project-text.w-100.my-auto.text-center.text-lg-left
+                h4.text-white
+                  | Ganaderia
+                p.mb-0.text-white-50
+                  | ...
+                hr.d-none.d-lg-block.mb-0.ml-0
+      .row.justify-content-center.no-gutters
+        .col-lg-6
+          img.img-fluid[src="/assets/abejas.jpg" alt=""]
+        .col-lg-6.order-lg-first
+          .bg-black.text-center.h-100.project
+            .d-flex.h-100
+              .project-text.w-100.my-auto.text-center.text-lg-right
+                h4.text-white
+                  | Apicultura
+                p.mb-0.text-white-50
+                  | ...
+                hr.d-none.d-lg-block.mb-0.mr-0
+      .row.justify-content-center.no-gutters.mb-5.mb-lg-0
+        .col-lg-6
+          img.img-fluid[src="/assets/variado.jpg" alt=""]
+        .col-lg-6
+          .bg-black.text-center.h-100.project
+            .d-flex.h-100
+              .project-text.w-100.my-auto.text-center.text-lg-left
+                h4.text-white
+                  | Granos y Uchuvas
+                p.mb-0.text-white-50
+                  | ...
+                hr.d-none.d-lg-block.mb-0.ml-0
+  section.contact-section.bg-black
+    .container
+      .row
+        .col-md-4.mb-3.mb-md-0
+          .card.py-4.h-100
+            .card-body.text-center
+              i.fas.fa-map-marked-alt.text-primary.mb-2
+              h4.text-uppercase.m-0
+                | Direccion
+              hr.my-4
+              .small.text-black-50
+                | ...
+        .col-md-4.mb-3.mb-md-0
+          .card.py-4.h-100
+            .card-body.text-center
+              i.fas.fa-envelope.text-primary.mb-2
+              h4.text-uppercase.m-0
+                | Email
+              hr.my-4
+              .small.text-black-50
+                a[href="#!"]
+                  | criaderosanmartin1@gmail.com
+        .col-md-4.mb-3.mb-md-0
+          .card.py-4.h-100
+            .card-body.text-center
+              i.fas.fa-mobile-alt.text-primary.mb-2
+              h4.text-uppercase.m-0
+                | Phone
+              hr.my-4
+              .small.text-black-50
+                | 3507871485
+      .social.d-flex.justify-content-center
+        a.mx-2[href="https://www.instagram.com/hda.san.martin1/"]
+          i.fab.fa-instagram
+        a.mx-2[href="https://www.facebook.com/hda.san.martin1/"]
+          i.fab.fa-facebook-f
+  footer.footer.bg-black.small.text-center.text-white-50
+    .container
+      | Copyright © criadero San Martín 2020
+  script[src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"]
+  script[src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"]
+  script[src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"]
+
+  javascript:
+      /*!
+          * Start Bootstrap - Grayscale v6.0.2 (https://startbootstrap.com/themes/grayscale)
+          * Copyright 2013-2020 Start Bootstrap
+          * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-grayscale/blob/master/LICENSE)
+          */
+      (function ($) {
+          "use strict"; // Start of use strict
+
+          // Smooth scrolling using jQuery easing
+          $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
+              if (
+                  location.pathname.replace(/^\//, "") ==
+                  this.pathname.replace(/^\//, "") &&
+                  location.hostname == this.hostname
+              ) {
+                  var target = $(this.hash);
+                  target = target.length
+                      ? target
+                      : $("[name=" + this.hash.slice(1) + "]");
+                  if (target.length) {
+                      $("html, body").animate(
+                          {
+                              scrollTop: target.offset().top - 70,
+                          },
+                          1000,
+                          "easeInOutExpo"
+                      );
+                      return false;
+                  }
+              }
+          });
+
+          // Closes responsive menu when a scroll trigger link is clicked
+          $(".js-scroll-trigger").click(function () {
+              $(".navbar-collapse").collapse("hide");
+          });
+
+          // Activate scrollspy to add active class to navbar items on scroll
+          $("body").scrollspy({
+              target: "#mainNav",
+              offset: 100,
+          });
+
+          // Collapse Navbar
+          var navbarCollapse = function () {
+              if ($("#mainNav").offset().top > 100) {
+                  $("#mainNav").addClass("navbar-shrink");
+              } else {
+                  $("#mainNav").removeClass("navbar-shrink");
+              }
+          };
+          // Collapse now if page is not at top
+          navbarCollapse();
+          // Collapse the navbar when page is scrolled
+          $(window).scroll(navbarCollapse);
+      })(jQuery); // End of use strict
